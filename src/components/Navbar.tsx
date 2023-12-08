@@ -26,6 +26,7 @@ const Navbar = () => {
                 Pricing
               </Link>
 
+              {/* this will navigate to a page served by kinde for auth */}
               <LoginLink
                 className={buttonVariants({
                   variant: "ghost",
@@ -35,6 +36,7 @@ const Navbar = () => {
                 login
               </LoginLink>
 
+              {/*  this will navigate to a page served by kinde for auth */}
               <RegisterLink
                 className={buttonVariants({
                   size: "sm",
