@@ -3,10 +3,10 @@ import { redirect } from "next/navigation";
 
 
 const Page = async () => {
-  const { getUser } = getKindeServerSession();
+  const { getUser } = getKindeServerSession();    // 3rd party auth lib
   const user =  await getUser();
 
-  if(!user || !user.id) redirect("/auth-callback?origin=/dashboard");       // 
+  if(!user || !user.id) redirect("/auth-callback?origin=/dashboard");       // if user is not logged in, redirect to login page
 
 
 
